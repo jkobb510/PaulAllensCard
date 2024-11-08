@@ -18,7 +18,7 @@ body {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 8s;
+	animation-duration: 6s;
 }
 
 @keyframes fadeInOpacity {
