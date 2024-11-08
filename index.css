@@ -78,6 +78,10 @@ body {
     line-height: 0.5;
 }
 
+.last-name {
+    font-size: var(--font-size-larger);
+}
+
 .title {
     font-size: var(--font-size-medium);
     text-align: center;
