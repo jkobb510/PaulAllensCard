@@ -1,0 +1,125 @@
+:root {
+    --font-size-small: 11.5px;
+    --font-size-medium: 14px;
+    --font-size-large: 16px;
+    --font-size-larger: 18px;
+}
+
+body {
+    background-color: #150505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    height: 200px;
+    width: 390px;
+    padding: 20px;
+    border: 1px solid #DCDCDC;
+    background-color: #FFFFFF;
+    font-family: Copperplate;
+    color: #333333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0.1px 0.1px 0px grey;
+    font-weight: 100;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.phone {
+    font-size: var(--font-size-medium);
+    margin-top: -10px;
+    letter-spacing: -0.5px;
+}
+
+.company {
+    font-size: var(--font-size-larger);
+    letter-spacing: -1.8px;
+    line-height: 0.5;
+}
+
+.mergers {
+    font-size: var(--font-size-small);
+    text-align: right;
+    letter-spacing: -1.1px;
+}
+
+.name {
+    font-size: var(--font-size-large);
+    text-align: center;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 0.5;
+}
+
+.title {
+    font-size: var(--font-size-medium);
+    text-align: center;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.address {
+    font-size: var(--font-size-small);
+    text-align: center;
+    margin-top: 50px;
+    margin: 50px auto 0;
+}
+
+@media screen and (max-width: 435px) {
+    :root {
+        --font-size-small: 10px;
+        --font-size-medium: 12px;
+        --font-size-large: 13.5px;
+        --font-size-larger: 15px;
+    }
+
+    .card {
+        height: 154px;
+        width: 300px;
+        padding: 15px;
+    }
+
+    .address {
+        margin: 40px 10px 10px;
+    }
+
+    .name {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    :root {
+        --font-size-small: 8px;
+        --font-size-medium: 9px;
+        --font-size-large: 10px;
+        --font-size-larger: 12px;
+    }
+
+    .card {
+        height: 120px;
+        width: 220px;
+        padding: 10px;
+    }
+
+    .address {
+        margin: 30px 10px 10px;
+    }
+
+    .name {
+        margin-top: 40px;
+    }
+}
