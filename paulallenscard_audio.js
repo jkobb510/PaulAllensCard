@@ -1,6 +1,6 @@
         const audio = document.getElementById('welcomeAudio');
         const fadeInDiv = document.getElementById('fadeInDiv');
-const blackOverlay = document.getElementById('blackOverlay');
+        const blackOverlay = document.getElementById('blackOverlay');
 
         // Function to handle button click: play audio and show fade-in div
         function handleButtonClick(button) {
@@ -23,6 +23,9 @@ const blackOverlay = document.getElementById('blackOverlay');
     
         }
 
-function triggerFadeToBlack() {
-    blackOverlay.classList.add('fade-black');
-}
+        function triggerFadeToBlack() {
+            blackOverlay.classList.add('fade-black');
+        }
+        function resetPage() {
+            location.reload(); // Reloads the page
+        }
