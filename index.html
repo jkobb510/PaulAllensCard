@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Allen's Card</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="fade-in">
+        <audio id="welcomeAudio" preload="auto">
+            <source src="paulallenscard.mp3" type="audio/mp3">
+        </audio>
+<button onclick="handleButtonClick(this)" class="relative inline-block px-4 py-2 font-medium group">
+    <span
+        class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:translate-x-0 group-hover:translate-y-0"></span>
+    <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+    <span class="relative text-black group-hover:text-white">Click to see Paul Allen's Card</span>
+</button>
+    <div id="blackOverlay" class="fullscreen-black"></div>
+
+
+    <div class="fade-in" id="fadeInDiv">
         <div class="card">
             <div class="header">
                 <div class="phone">212 555 6342</div>
@@ -28,6 +42,8 @@
             </div>
         </div>
     </div>
+    
+    <script src="paulallenscard_audio.js"> </script>
 </body>
 
 </html>
